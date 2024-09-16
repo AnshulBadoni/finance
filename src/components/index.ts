@@ -7,6 +7,11 @@ import MobileNav from "./MobileNav";
 import Drawer from "./Drawer";
 import RightSidebar from "./RightSidebar";
 import BankCard from "./BankCard";
+import AuthForm from "./AuthForm";
+import CustomInput from "./CustomInput";
+import Footer from "./Footer";
+import Recenttransaction from "./Recenttransaction";
+import BarChart from "./BarChart";
 
 export 
 { 
@@ -18,5 +23,10 @@ export
     MobileNav,
     Drawer,
     RightSidebar,
-    BankCard
+    BankCard,
+    AuthForm,
+    CustomInput,
+    Footer,
+    Recenttransaction,
+    BarChart
 }

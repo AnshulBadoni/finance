@@ -6,8 +6,8 @@ export const sidebarLinks = [
   },
   {
     imgURL: "/icons/dollar-circle.svg",
-    route: "/my-banks",
-    label: "My Banks",
+    route: "/performance-indicator",
+    label: "Performance Indicator",
   },
   {
     imgURL: "/icons/transaction.svg",

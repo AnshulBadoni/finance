@@ -204,7 +204,7 @@ declare interface BankTabItemProps {
 
 declare interface TotlaBalanceBoxProps {
   accounts: Account[];
-  totalBanks: number;
+  holding: string;
   totalCurrentBalance: number;
 }
 
@@ -293,7 +293,7 @@ declare interface getTransactionsByBankIdProps {
 }
 
 declare interface signInProps {
-  email: string;
+  clientid: string;
   password: string;
 }
 

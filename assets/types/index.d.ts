@@ -26,19 +26,10 @@ declare type LoginUser = {
 };
 
 declare type User = {
-  $id: string;
+  value:string;
   email: string;
-  userId: string;
-  dwollaCustomerUrl: string;
-  dwollaCustomerId: string;
   firstName: string;
   lastName: string;
-  address1: string;
-  city: string;
-  state: string;
-  postalCode: string;
-  dateOfBirth: string;
-  ssn: string;
 };
 
 declare type NewUserParams = {
@@ -204,12 +195,14 @@ declare interface BankTabItemProps {
 
 declare interface TotlaBalanceBoxProps {
   accounts: Account[];
-  totalBanks: number;
+  holding: string;
   totalCurrentBalance: number;
+  title?: string;
 }
 
 declare interface FooterProps {
   user: User;
+  type?: 'mobile' | 'desktop';
 }
 
 declare interface RightSidebarProps {
@@ -293,7 +286,7 @@ declare interface getTransactionsByBankIdProps {
 }
 
 declare interface signInProps {
-  email: string;
+  clientid: string;
   password: string;
 }
 
@@ -325,4 +318,9 @@ declare interface getBankProps {
 
 declare interface getBankByAccountIdProps {
   accountId: string;
+}
+
+declare interface sectorChartProps {
+  clientId:number;
+  view:string;
 }

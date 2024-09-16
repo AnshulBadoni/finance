@@ -1,10 +1,11 @@
 import AnimatedCounter from './AnimatedCounter'
 import DougnetChart from './DougnetChart'
 
-const TotalBalanceBox = ({accounts=[],totalBanks,totalCurrentBalance}:TotlaBalanceBoxProps) => {
+const TotalBalanceBox = ({accounts=[],holding,totalCurrentBalance}:TotlaBalanceBoxProps) => {
+    console.log(accounts)
   return (
     <section className='total-balance'>
-        <div className="total-balance-chart">
+        <div className="total-balance-chart grid grid-cols-2">
             {/* dougnut chart */}
             <DougnetChart 
                 accounts={accounts}
@@ -12,7 +13,7 @@ const TotalBalanceBox = ({accounts=[],totalBanks,totalCurrentBalance}:TotlaBalan
         </div>
         <div className="flex flex-col gap-6">
             <h2 className='header-2'>
-                Accounts: {totalBanks}
+                Accounts: {holding}
             </h2>
             <div className='flex flex-col gap-2'>
                 <p className='total-balance-label'>
